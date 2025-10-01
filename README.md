@@ -82,20 +82,6 @@ Weather-Dashboard/
 
 ---
 
-## 🌍 Demo
-
-🔗 [Live Demo](https://yourusername.github.io/Weather-Dashboard) *(Add GitHub Pages link when deployed)*
-
----
-
-## 📌 Future Improvements
-
-* Add **hourly forecast**
-* Add **search history**
-* Implement **dark/light theme toggle**
-* Support **multiple units** (°C/°F, m/s/mph)
-
----
 
 ## 👨‍💻 Author
 
