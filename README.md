@@ -23,8 +23,7 @@ Built with **HTML, CSS, JavaScript, Bootstrap 5, and OpenWeather API (via RapidA
 
 ## 📸 Preview
 
-![Weather Dashboard Screenshot](assets/preview.png)
-*(Add your screenshot inside the `assets` folder and rename it `preview.png`)*
+![Weather Dashboard Screenshot](assets/preview.PNG)
 
 ---
 
