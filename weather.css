@@ -1,0 +1,169 @@
+/* Importing poppins Google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Setting global properties */
+* {
+    font-family: 'Poppins', 'Sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Using the :root pseudo selector */
+:root {
+    /* Dark theme colors */
+    --text-color: #edf3ff;
+    --subheading-color: #97a7ca;
+    --placeholder-color: #c3cdde;
+    --primary-color: #101623;
+    --secondary-color: #283045;
+    --secondary-hover-color: #333e58;
+    --scrollbar-color: #626a7f;
+}
+
+/* Setting properties for body */
+body {
+    color: var(--text-color);
+    background: var(--primary-color);
+}
+
+.container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 350px;
+    min-height: 600px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #2a48db 50%, #cbbb7b 100%);
+    box-shadow: 0 0 12px 2px #ffd70044, 0 3px 5px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    padding: 0.4rem;
+    max-width: fit-content;
+    background-color: white;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+.search-icon{
+    padding: 5px;
+}
+.search-input-form {
+    display: flex;
+    font-size: 1.1rem;
+}
+.search-input {
+    height: 100%;
+    width: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    
+}
+
+.general-info {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 25px 0 0 10px;
+}
+
+.display-date{
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+
+}
+.city p {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.city {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+
+}
+
+.weather-status {
+    text-align: center;
+    margin: 50px 0 0 10px;
+}
+
+.general-weather-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0 0 10px;
+}
+
+.weather-status {
+    margin: 0 10px 0 0;
+}
+
+.weather-icon-img {
+    margin-bottom: 5px;
+    width: 100px;
+}
+
+.other-weather-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 0 10px;
+    text-align: center;
+}
+
+:where(.humidity, .wind-speed) {
+    display: flex;
+    gap: 9px;
+    
+}
+
+:where(.humidity-text, .wind-speed-text) {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+
+.four-day-forecast {
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    cursor: pointer;
+    /* align-content: ; */
+}
+
+.forecast-btn {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.forecast-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}

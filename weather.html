@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- 01.Seacrh Bar containing form and a search button-->
+        <div class="search-bar">
+            <div class="search-input-div">
+                <form action="#" class="search-input-form">
+                    <input 
+                    type="text" 
+                    class="search-input" 
+                    name="city"
+                    placeholder="Enter your City" 
+                    required 
+                    >
+                    <button type="submit" style="border: none; background: none;" class="search-btn"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <!-- 02.General info containing city name and today's date -->
+        <div class="general-info">
+            <div class="city">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="city-name">------</p>
+            </div>
+            <div class="display-date">
+                <i class="fa-solid fa-calendar"></i>
+                <p class="current-date"></p>
+            </div>
+        </div>
+
+        <div class="general-weather-info">
+            <div class="weather-icon">
+                <img src="assets\weather\clear.svg" alt="" srcset="" class="weather-icon-img">
+            </div>
+            <div class="weather-status">
+                <h2 class="temperature-text">--- °C</h2>
+                <span class="weather-status-text">Sunny</span>
+            </div>
+        </div>
+        <!-- 03.More weather info containing humidity and wind speed -->
+        <div class="other-weather-info">
+            <div class="humidity">
+                <div class="humidity-icon">
+                    <i class="fa-solid fa-droplet"></i>
+                </div>
+                <div class="humidity-status">
+                    <p>Humidity</p>
+                    <span class="humidity-text">-----%</span>
+                </div>
+            </div>
+
+            <div class="wind-speed">
+                <div class="wind-speed-icon">
+                    <i class="fa-solid fa-wind"></i>
+                </div>
+                <div class="wind-speed-status">
+                    <p>Wind Speed</p>
+                    <span class="wind-speed-text">---- M/S</span>
+                </div>
+            </div>
+        </div>
+        <!-- 04.Four day forecast -->
+        <div class="four-day-forecast">
+            <div class="forecast-btn">
+                <p class="forecast-date">-------</p>
+                <img class="forecast-icon"></img>
+                <p class="forecast-temperature">----- °C</p>
+            </div>
+             <div class="forecast-btn">
+                <p class="forecast-date">-------</p>
+                <img class="forecast-icon"></img>
+                <p class="forecast-temperature">----- °C</p>
+            </div>
+             <div class="forecast-btn">
+                <p class="forecast-date">-------</p>
+                <img class="forecast-icon"></img>
+                <p class="forecast-temperature">----- °C</p>
+            </div>
+             <div class="forecast-btn">
+                <p class="forecast-date">-------</p>
+                <img class="forecast-icon"></img>
+                <p class="forecast-temperature">----- °C</p>
+            </div>
+           
+
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    
+</body>
+
+</html>
+
+<body>
